@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | Double C&B</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+  <div class="logo">Double C&B</div>
+
+  <nav class="nav" id="navMenu">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="recipes.html">Recipes</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <button class="login-btn"> <a href="login.html">log in</a></button>
+
+  <div class="burger" id="burgerToggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+
+
+  <main class="contact-main">
+    <h1>Contact Us</h1>
+    <form id="contactForm">
+      <label>
+        Full Name:
+        <input type="text" id="name" required />
+      </label>
+
+      <label>
+        Email:
+        <input type="email" id="email" required />
+      </label>
+
+      <label>
+        Password:
+        <div class="password-wrap">
+          <input type="password" id="password" required />
+          <button type="button" id="togglePassword">Show</button>
+        </div>
+      </label>
+
+      <label>
+        Message:
+        <textarea id="message" rows="4" required></textarea>
+      </label>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </main>
+
+  <!-- Cookies Notification -->
+  <div class="cookie-banner" id="cookieBanner">
+    This website uses cookies to improve your experience.
+    <button id="acceptCookies">Accept</button>
+  </div>
+
+  <script src="js/menu.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

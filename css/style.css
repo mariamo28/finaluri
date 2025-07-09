@@ -1,0 +1,1121 @@
+/* login body style */
+.login-body {
+  font-family: 'Roboto', sans-serif;
+  background: #fff3e0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-container {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  width: 90%;
+  max-width: 400px;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #ff9800;
+  box-shadow: 0 0 5px rgba(255,152,0,0.5);
+}
+
+.password-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.password-wrapper button {
+  padding: 6px 10px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.primary-btn {
+  width: 100%;
+  background: #ff9800;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.primary-btn:hover {
+  background: #e68900;
+}
+
+.error {
+  color: red;
+  font-size: 0.8rem;
+}
+
+.back-home {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.recipe-page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.recipe-intro {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.recipe-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.recipe-card {
+  background: #fff8e1;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.recipe-card h3 {
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+/* სხვა სტილები დარჩება იგივე */
+
+.mobile-login {
+  display: none; /* Hide by default */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-nav {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: white;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    z-index: 100;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .main-nav.show {
+    display: flex;
+  }
+
+  .login-btn {
+    display: none; /* Desktop Login button */
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .mobile-login {
+    display: block; /* Show mobile login in menu */
+  }
+
+  .nav-container {
+    justify-content: space-between;
+  }
+}
+
+
+.about-main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.about-hero {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: black;
+}
+
+.about-content article {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.about-content article:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.about-content img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.about-text h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.about-text p {
+  color: #444;
+}
+
+@media (max-width: 768px) {
+  .about-content article {
+    flex-direction: column !important;
+  }
+}
+
+.contact-main {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+form button[type="submit"] {
+  background-color: #f4b400;
+  color: #000;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #dba700;
+}
+
+.password-wrap {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.password-wrap button {
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+/* Cookie Banner */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #222;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  display: none;
+  z-index: 1000;
+}
+
+.cookie-banner button {
+  margin-left: 1rem;
+  background-color: #f4b400;
+  color: #000;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Scroll to Top */
+.scroll-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px 15px;
+  background-color: #f4b400;
+  color: #000;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  z-index: 999;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* Header Shrink */
+.site-header.scrolled {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+/* Scroll Reveal */
+.animate {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.recipes-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.recipe-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.recipe-card {
+  background-color: #fff8dc;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+}
+
+
+
+/* Cookie Notification */
+.cookie-box {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background: #333;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  z-index: 999;
+}
+
+.cookie-box button {
+  background: #f4b400;
+  border: none;
+  padding: 8px 12px;
+  color: #000;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* ===== General Reset ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Responsive Layout ===== */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.login-btn {
+  margin-left: auto;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 9999px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.burger-menu {
+  display: none;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+/* ===== Responsive Hero Section ===== */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+   padding: 4rem 2rem;
+  background-color: #fff;
+}
+
+.hero-text {
+  flex: 1;
+  color: #000;
+}
+.hero-text h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+.hero-text p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+
+.hero-img {
+  flex: 1;
+  max-width: 100%;
+}
+
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+  background-color: #f9f9f9; /* ღია ფონისთვის */
+}
+
+.feature {
+  flex: 1;
+  min-width: 250px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+}
+/* ===== Mental Health Section ===== */
+.mental-health {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  background-color: #000; /* შავი ფონი */
+  color: #000; /* თეთრი ტექსტი, რომ ჩანს შავ ფონზე */
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem;
+}
+.mental-health img {
+  max-width: 100%;
+  height: auto;
+  flex: 1 1 300px;
+}
+
+.mental-health .text {
+  flex: 1 1 300px;
+ 
+  text-align: center;
+}
+
+
+/* ===== Mobile Styles (max-width: 768px) ===== */
+@media (max-width: 768px) {
+  .main-nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+
+  .main-nav ul.active {
+    display: flex;
+  }
+
+  .login-btn {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .nav-container {
+    position: relative;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .features {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mental-health {
+    flex-direction: column;
+    text-align: center;
+    text-align: center;
+  }
+
+  .mental-health img {
+    order: -1;
+  
+  }
+}
+
+
+
+.testimonials {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 1rem;
+  background-color: #fff;
+}
+
+.testimonial-card {
+  background-color: #f4f4f4;
+  padding: 1.5rem;
+  border-radius: 10px;
+  max-width: 300px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.testimonial-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.author img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author strong {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+/* Responsive for screens <= 480px */
+@media (max-width: 480px) {
+  .testimonials {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial-card {
+    max-width: 90%;
+  }
+}
+
+
+footer {
+  background-color: #0d0d0d;
+  color: #fff;
+  padding: 3rem 1rem;
+}
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.footer-columns > div {
+  flex: 1 1 200px;
+}
+
+.footer-columns h4 {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.footer-columns ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-columns ul li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-columns ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.footer-columns ul li a:hover {
+  color: #fff;
+}
+
+.subscribe input[type="email"] {
+  padding: 0.6rem 1rem;
+  border-radius: 20px;
+  border: none;
+  width: 100%;
+  max-width: 220px;
+  background-color: #1a1a1a;
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.subscribe input::placeholder {
+  color: #aaa;
+}
+
+.subscribe::after {
+  content: "📩";
+  position: relative;
+  left: -2rem;
+  top: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .footer-columns {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+.motivation-section {
+  background: url('/img/Screenshot\ 2025-07-08\ 213633.png') no-repeat center center/cover; /* ჩასვი შენი სურათის გზა */
+  background-color: #fde047; /* ყვითელი fallback */
+  text-align: center;
+  color: #000;
+  padding: 6rem 2rem;
+  position: relative;
+}
+
+.motivation-content {
+  max-width: 800px;
+  margin: 0 auto;
+  z-index: 2;
+  position: relative;
+}
+
+.motivation-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.2); /* ოდნავ თეთრი გადაფარვა უკეთესი კონტრასტისთვის */
+  z-index: 1;
+}
+
+.small-text {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.motivation-content h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.3;
+  margin-bottom: 2rem;
+}
+
+.motivation-btn {
+  background-color: white;
+  color: #000;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 9999px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
+}
+
+.motivation-btn:hover {
+  background-color: #fefce8;
+}
+@media (max-width: 480px) {
+  .motivation-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .motivation-btn {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fff;
+  color: #222;
+  padding: 40px 20px;
+}
+
+.recipes-section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-title span {
+  color: #f44336;
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.recipe-card {
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.recipe-card:hover {
+  transform: scale(1.02);
+}
+
+.recipe-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.fav-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #fff;
+  border: none;
+  font-size: 20px;
+  border-radius: 50%;
+  padding: 5px 10px;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.category {
+  font-size: 0.8rem;
+  color: #888;
+  margin: 10px 15px 5px;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 15px 10px;
+  color: #111;
+}
+
+.rating {
+  margin: 0 15px 15px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.rating span {
+  color: #666;
+  font-size: 0.8rem;
+  margin-left: 5px;
+}
+
+
+
+/* Base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: relative;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+  list-style: none;
+  margin-left: 20px;
+  padding-left: 140px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.login-btn {
+  background: black;
+  color: whitesmoke;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: none;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.login-btn a{
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+  font-weight: 500;
+}
+/* Burger */
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.burger span {
+  width: 25px;
+  height: 3px;
+  background: #000;
+  border-radius: 2px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 0;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .nav.show {
+    display: flex;
+  }
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Hero Banner */
+.about-hero {
+  background-image: url('https://images.unsplash.com/photo-1572449043416-55f4685c9bbd');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-hero .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 40px;
+  text-align: center;
+  color: white;
+  border-radius: 12px;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+}
+
+/* Content Section */
+.about-content {
+  padding: 60px 20px;
+  background: #f9f9f9;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.about-content p {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+}
+
+/* Team Section */
+.team-section {
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.team-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2.2rem;
+}
+
+.team-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.team-member {
+  text-align: center;
+  max-width: 220px;
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.team-member h3 {
+  margin-bottom: 5px;
+}
+
+@media (max-width: 1024px) {
+  .about-hero h1 {
+    font-size: 2rem;
+  }
+
+  .team-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .recipe-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 10px;
+  }
+
+  .recipe-card {
+    position: relative;
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .recipe-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+  }
+
+  .recipe-card .fav-btn,
+  .recipe-card .category,
+  .recipe-card .title,
+  .recipe-card .rating {
+    display: none;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 20px 0;
+  }
+}
+
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.recipe-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.recipe-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
